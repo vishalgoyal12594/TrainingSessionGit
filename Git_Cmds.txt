@@ -1,0 +1,116 @@
+
+Download GIt
+https://git-scm.com/download/win
+--------------------------------------------
+git tools
+--------------------------------------------
+git bush
+git cmd
+git GUI
+
+--------------------------------------------
+Config details
+--------------------------------------------
+git config --list
+
+--------------------------------------------
+Change username and email
+--------------------------------------------
+git config --global user.name "Vishal"
+git config --global user.email "vishalXXXXXXX@XXXX.com"
+
+
+--------------------------------------------
+To take Project to Local from repository---Cloning
+--------------------------------------------
+We can navigate to any folder where we need to clone using cd cmd
+
+git clone URL(repository url)
+
+--------------------------------------------
+Moving file to Repo
+--------------------------------------------
+1) Staging Area where files are used to track(Buffer)
+	--->git add filename
+	--->git add .
+	--->git add -A (for all directories)
+ADD cmd WILL NOT GIVE ANY STATUS OR OUTPUT
+	git status --> to get the output of added files/folders
+
+2) Local Repo
+	-->git commit
+	-->git commit -m "Reason"
+once commit is completed SHA key is generated for each commits
+	---> git log
+
+3) Remote Repo
+	-->git push
+
+--------------------------------------------
+ To view URL Name which is named to remo repository URL
+--------------------------------------------
+	-----> git remote -V
+
+--------------------------------------------
+To Rename remote repo name
+--------------------------------------------
+	-----> git remote rename origin destination
+	-----> git remote -V
+
+
+####
+--------------------------------------------------------------------------
+While Creating a project if the project is not initialized during creation 
+---------------------------------------------------------------------------
+	----> Git init
+		--->.git file is created which contains all the configs.
+		(This is initialized oly in local machine not in remote repo)
+	To make this init in remote repo 
+	---> Create a file/folder to move the .git as well created folder
+	---> git add
+	----> git commit
+	----> git remote -v
+now here no reomte repo is available so add it
+	--->git remote add origin <URL>
+	--->git remote -v
+Now the origin is added
+finally push the files
+	----> git push origin master
+
+
+---------------------------------------------------------------------------
+Advanced Commands
+---------------------------------------------------------------------------
+git clean ---> it is used to clean untracked file (buffer)
+		--->git clean -f  #clean the files
+		--->git clean -fd #clean the directory
+
+TO remove files/folders from the staging area to current stage to previous stage
+	---->git  reset --hard
+
+
+TO remove from files or folder from the local repository 
+	---->git revert <commit id>  commit id should be taken from log
+
+TO get previous version file
+	----->git checkout <filename>
+
+To commit the changes when file is modified during staging area that afer commit
+	---->git commit --amend
+
+To push the files forcefully
+	-->git push -f
+
+if we donot want the file for temporart time period
+	--->git stash
+	--->git stash list
+	--->git stash apply
+	--->git stash pop
+
+To see list of commits to be pushed to remote repo
+	-->git cherry -v
+
+--------------------------------------------------------------------
+Branching mechanism
+--------------------------------------------------------------------
+	
