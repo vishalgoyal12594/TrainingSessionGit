@@ -1,0 +1,6 @@
+projectKey=Day-one
+serverUrl=http://localhost:9000
+serverVersion=6.5.0.27846
+dashboardUrl=http://localhost:9000/dashboard/index/Day-one
+ceTaskId=AWGeBJ9_SItJVehdhY4N
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWGeBJ9_SItJVehdhY4N
