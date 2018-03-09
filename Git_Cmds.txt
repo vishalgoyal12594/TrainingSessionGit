@@ -107,10 +107,53 @@ if we donot want the file for temporart time period
 	--->git stash apply
 	--->git stash pop
 
-To see list of commits to be pushed to remote repo
+To see list of commits pushed to remote repo
 	-->git cherry -v
 
 --------------------------------------------------------------------
 Branching mechanism
 --------------------------------------------------------------------
-	
+To switch b/w branches 
+	---> git checkout <branch name>
+
+To list out the branches
+	----> git branch -a
+
+To create a branches
+	---->git checkout -b develop master
+
+To merge the sub brach to main branch
+	----> git merge <branch_name>
+	---->git push (to reflect the files in main branch)
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+git for-each-ref 
+
+----------------------------------
+to view files of other branches
+-------------------------------------------
+git show branch_name :file
+
+
+------------------------
+to get accurate status -----> git status -s
+---------------------------
+
+--------------------------------
+To select a particular commit and apply to existing branch
+	-----> git cherry-pick<commit id>
+----------------------------------
+
+----->git rebase is used to pull and merge togther
+
+---------------------------------------
+To get details in different form
+-----> git log --author
+	       --name-oly
+		--oneline
+		--graph
+		--reverse
+		--after
+--------------------------------------------
